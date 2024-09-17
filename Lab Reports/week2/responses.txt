@@ -1,0 +1,27 @@
+Lab Report Week 2
+Group: Adarsh Sharma and Michael Getsos
+Acknowledgement: Prof. Eikmeier and Course Mentor
+
+Monday
+All Answers in .c files
+
+Wednesday
+
+B. 
+    1. Prediction: i=9, j=4.0, k=4.5, l=9, m=8, n=1000, o=~104, p=104
+
+    2. Result: everything was correct we incorrectly "wrapped" o and p, but we did correctly predict that they would be the same. Since we don't know binary operations we couldn't accurately predict the results.
+
+C. 
+    1. Refer .c file
+    2. Refer .c file
+    3.  lowercase a: 97
+        the digit 1: 49
+        percent sign: 37
+        space: 32
+        newline: 10
+        backspace: 8
+
+Friday
+
+D. Refer to .c files

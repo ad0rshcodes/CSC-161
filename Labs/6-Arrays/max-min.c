@@ -1,13 +1,13 @@
 /**
  * An example program that creates and accesses an array of double values.
  * 
- * \authors Grinnell College Computer Science Faculty & Adarsh Sharma & Michael Getsos
+ * \authors Grinnell College Computer Science Faculty
  */
 
 #include <stdio.h>
 
 // Number of elements to be processed in array
-#define LENGTH 12
+#define LENGTH 10
 
 int main() {
   // Create an array of LENGTH numbers
@@ -41,17 +41,9 @@ int main() {
   
   // Print the array contents
   printf("Array Contents:\n");
-  for(int i = 0; i < (LENGTH+4); i++) {
+  for(int i = 0; i < LENGTH; i++) {
     printf("numbers[%d] = %.1lf\n", i, numbers[i]);
   }
   
   return 0;
-
-  // 1. we get 5 first indeces
-  // 2. array of 12 elements; last two are 0
-  // 3. we expected an error or for it to loop from the back, but we got numbers[-1]=39.0 which is seemingly unrelated.
-
-  // 4.Predict out-of-bound error. 
-
-  
 }

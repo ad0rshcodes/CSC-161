@@ -1,3 +1,8 @@
+/**
+ * Homework 2: Rock, Paper, Scissors
+ * Author: Adarsh Sharma
+ */
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -8,6 +13,7 @@ int main()
 
     int rounds = 0;
 
+    // Taking valid round input from user. Error generated if negative or 0 value is given
     while (rounds <= 0)
     {
         printf("Welcome! How many rounds do you want to play: ");
@@ -19,12 +25,14 @@ int main()
         }
     }
 
+    // Win counts
     int userWins = 0;
     int computerWins = 0;
 
+    // Looping through each round.
     for (int i = 0; i < rounds; i++)
     {
-
+        // Computer and user responses.
         int userResponse = -1;
         int computerResponse = -1;
 
@@ -36,7 +44,7 @@ int main()
 
         while (userResponse != 0 && userResponse != 1 && userResponse != 2)
         {
-            printf("Make your decision for the next round. \n 0: Rock \n 1: Paper \n 2: Scissors \n \n");
+            printf("Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. \n 0: Rock \n 1: Paper \n 2: Scissors \n \n");
 
             printf("Your choice for this round: ");
             scanf("%d", &userResponse);
@@ -57,6 +65,7 @@ int main()
             2: scissors
         */
 
+        // Posibilities check
         if (userResponse == 0 && computerResponse == 0)
         {
             printf("Tie!! Both players choose rock.");
@@ -112,6 +121,8 @@ int main()
     }
 
     printf("\n\nAll the rounds are completed!!\n\n");
+
+    // Determining and printing who won
 
     if (userWins > computerWins)
     {

@@ -1,0 +1,167 @@
+Script started on Wed Sep 18 10:29:38 2024
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;adarshsharma@Adarshs-MacBook-Pro:~/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem 3/CSC-161/Homeworks/HW2-Rock-Paper-Scissors]1;..aper-Scissors]7;file://Adarshs-MacBook-Pro.local/Users/adarshsharma/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem%203/CSC-161/Homeworks/HW2-Rock-Paper-Scissors\[0m[27m[24m[J[01;32m➜  [36mHW2-Rock-Paper-Scissors[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mHW2-Rock-Paper-Scissors[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kcclang -o rockpaperscissors rockpaperscissors.c[?1l>[?2004l
+]2;clang -o rockpaperscissors rockpaperscissors.c]1;clang[1m[7m%[27m[1m[0m                                                                                                                         ]2;adarshsharma@Adarshs-MacBook-Pro:~/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem 3/CSC-161/Homeworks/HW2-Rock-Paper-Scissors]1;..aper-Scissors]7;file://Adarshs-MacBook-Pro.local/Users/adarshsharma/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem%203/CSC-161/Homeworks/HW2-Rock-Paper-Scissors\[0m[27m[24m[J[01;32m➜  [36mHW2-Rock-Paper-Scissors[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h../rockpaperscissors[?1l>[?2004l
+]2;./rockpaperscissors]1;./rockpaperscissorsWelcome! How many rounds do you want to play: 0
+
+ Enter permissible values for rounds you want to play. The value of rounds should be greater than 0. Try again! 
+ 
+ ------------------------- 
+ 
+Welcome! How many rounds do you want to play: -1
+
+ Enter permissible values for rounds you want to play. The value of rounds should be greater than 0. Try again! 
+ 
+ ------------------------- 
+ 
+Welcome! How many rounds do you want to play: -82
+
+ Enter permissible values for rounds you want to play. The value of rounds should be greater than 0. Try again! 
+ 
+ ------------------------- 
+ 
+Welcome! How many rounds do you want to play: 2
+
+ 
+Score Card: 
+ 
+Your wins: 0 
+Opponent's wins: 0 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 5
+
+
+Your input value is invalid. Your input needs to one of the following numbers: 0, 1, 2. Anything apart from these will be an error!! 
+ Now try again. 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: -34
+
+
+Your input value is invalid. Your input needs to one of the following numbers: 0, 1, 2. Anything apart from these will be an error!! 
+ Now try again. 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 3
+
+
+Your input value is invalid. Your input needs to one of the following numbers: 0, 1, 2. Anything apart from these will be an error!! 
+ Now try again. 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 0
+You won!! You chose Rock and the other player chose Scissors.
+ 
+Score Card: 
+ 
+Your wins: 1 
+Opponent's wins: 0 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 2
+Tie!! Both players choose scissors.
+
+All the rounds are completed!!
+
+You WON!!
+ Final Scores:
+Your Wins: 2 
+Other player Wins: 1 
+ 
+Thanks for Playing :)
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;adarshsharma@Adarshs-MacBook-Pro:~/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem 3/CSC-161/Homeworks/HW2-Rock-Paper-Scissors]1;..aper-Scissors]7;file://Adarshs-MacBook-Pro.local/Users/adarshsharma/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem%203/CSC-161/Homeworks/HW2-Rock-Paper-Scissors\[0m[27m[24m[J[01;32m➜  [36mHW2-Rock-Paper-Scissors[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h../rockpaperscissors[?1l>[?2004l
+]2;./rockpaperscissors]1;./rockpaperscissorsWelcome! How many rounds do you want to play: 3
+
+ 
+Score Card: 
+ 
+Your wins: 0 
+Opponent's wins: 0 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 023
+
+
+Your input value is invalid. Your input needs to one of the following numbers: 0, 1, 2. Anything apart from these will be an error!! 
+ Now try again. 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: -12 
+
+
+Your input value is invalid. Your input needs to one of the following numbers: 0, 1, 2. Anything apart from these will be an error!! 
+ Now try again. 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 2
+Other player won!! You chose Scissors and the other player chose Rock.
+ 
+Score Card: 
+ 
+Your wins: 0 
+Opponent's wins: 1 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 0
+Tie!! Both players choose rock.
+ 
+Score Card: 
+ 
+Your wins: 1 
+Opponent's wins: 2 
+ 
+Make your decision for the next round. You can choose amongst 3 integers: 0, 1, 2. Each integer corresponds to the following values. 
+ 0: Rock 
+ 1: Paper 
+ 2: Scissors 
+ 
+Your choice for this round: 0 2 1
+You won!! You chose Paper and the other player chose Rock.
+
+All the rounds are completed!!
+
+It's a TIE!!
+ Final Scores:
+Your Wins: 2 
+Other player Wins: 2 
+ 
+Thanks for Playing :)
+[1m[7m%[27m[1m[0m                                                                                                                         ]2;adarshsharma@Adarshs-MacBook-Pro:~/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem 3/CSC-161/Homeworks/HW2-Rock-Paper-Scissors]1;..aper-Scissors]7;file://Adarshs-MacBook-Pro.local/Users/adarshsharma/Library/CloudStorage/OneDrive-GrinnellCollege/Classes/Sem%203/CSC-161/Homeworks/HW2-Rock-Paper-Scissors\[0m[27m[24m[J[01;32m➜  [36mHW2-Rock-Paper-Scissors[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Wed Sep 18 10:32:35 2024

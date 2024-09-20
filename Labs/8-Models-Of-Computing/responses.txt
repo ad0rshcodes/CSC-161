@@ -1,0 +1,178 @@
+1.
+
+Point (A):
+
+Stack:
+
+-- Main
+(empty)
+
+---------------
+
+Point (B):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f1
+(empty)
+
+Output:
+30
+
+---------------
+
+Point (C):
+
+Stack:
+
+-- MainPoint (B):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f1
+(empty)
+
+Output:
+30
+
+(empty)
+
+-- f2
+(empty)
+
+Output:
+301
+
+---------------
+
+Point (D):
+
+-- Main
+(empty)
+
+-- f2
+(empty)
+
+-- f1
+(empty)
+
+Output:
+3010
+
+---------------
+
+Point (E):
+
+-- Main
+(empty)
+
+Output:
+30102
+
+---------------
+
+
+2.
+
+Point (A):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f1
+(empty)
+
+Output:
+30
+
+---------------
+
+Point (B):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f2
+(empty)
+
+Output:
+30
+
+---------------
+
+Point (C):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f2
+(empty)
+
+-- f1
+(empty)
+
+Output:
+3010
+
+---------------
+
+Point (D):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f3
+(empty)
+
+-- f2
+(empty)
+
+Output:
+3010
+
+---------------
+
+Point (E):
+
+Stack:
+
+-- Main
+(empty)
+
+-- f3
+(empty)
+
+-- f2
+(empty)
+
+-- f1
+(empty)
+
+Output:
+301010
+
+---------------
+
+Point (F):
+
+Stack:
+
+-- Main
+(empty)
+
+Output:
+3010102

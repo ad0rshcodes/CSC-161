@@ -1,0 +1,132 @@
+Lab Report Week 3
+Authors: Adarsh Sharma, ET Ourn
+
+
+Lab: Functions 
+
+B.  Refer to the c files.
+
+C. 
+    1. Predicted Output: 
+    
+       The total is 208 
+       The total is 208
+       The total is 218
+
+       The first print statement is calling upon sum() which will add all the elements of array values. 
+
+       The incrementValue() is called inside the loop, but it increments the local copy of each values[i] (since v is passed by value). Therefore, second print statement remains same as first. 
+
+       The incrementArray() function correctly increments each element in the values array (since arrays are passed by reference). Therefore, each element is increased by 1 and the print statement prints 218. 
+
+    2. Refer to the c files.
+
+    3. Our predictions correctly matched the output. 
+
+    4. If the length is smaller than the actual length, sum() will calculate the sum of initial number of elements you passed.
+
+    If its larger than the array length, it won't throw any error and add whatever is stored in that memory location even when its supposed to be out of bound. 
+    It will result in a garbage value.  
+
+
+Lab: Models of Computation
+
+
+A. 
+    2.
+        Point (A):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        -- f1
+        (empty)
+
+        Output:
+        30
+
+        ---------------
+
+        Point (B):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        -- f2
+        (empty)
+
+        Output:
+        30
+
+        ---------------
+
+        Point (C):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        -- f2
+        (empty)
+
+        -- f1
+        (empty)
+
+        Output:
+        3010
+
+        ---------------
+
+        Point (D):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        -- f3
+        (empty)
+
+        -- f2
+        (empty)
+
+        Output:
+        3010
+
+        ---------------
+
+        Point (E):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        -- f3
+        (empty)
+
+        -- f2
+        (empty)
+
+        -- f1
+        (empty)
+
+        Output:
+        301010
+
+        ---------------
+
+        Point (F):
+
+        Stack:
+
+        -- Main
+        (empty)
+
+        Output:
+        3010102

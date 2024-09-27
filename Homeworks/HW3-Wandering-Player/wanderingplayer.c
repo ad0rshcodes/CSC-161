@@ -8,15 +8,17 @@
 #include <time.h>
 #include <stdlib.h>
 
-// #define numrowss 10
-// #define numcolss 10
+// Length and Breadth of the grid
+#define SIZE 10
 
 /* Function which prints the current state of the grid to the terminal
 preconditions: numrows and numcols are integers, grid is a 2D array with numrows equal to the length of the first dimension of grid and numcols equal to the length of the second dimension of grid
 postconditions: the exact contents of grid are printed to the terminal. No variables are changed
 */
+
 void printgrid(int numrows, int numcols, char grid[numrows][numcols])
 {
+    // Loop to traverse through rows first and then columns to print each element.
     for (int i = 0; i < numrows; i++)
     {
         for (int j = 0; j < numcols; j++)
@@ -33,61 +35,97 @@ currentrow is an integer between 0 and numrows-1.
 currentcol is an integer between 0 and numcols-1.
 postconditions: returns true if at least one of the directions of movement {left, right, up, down}  on the grid is valid, meaning that at least one direction does not move off the grid and contains a '.' character.
 */
-bool validmoveexists(int numrows, int numcols, char grid[numrows][numcols], int currentrow, int currentcol)
-{
-    char leftValue = grid[currentrow][currentcol - 1];
-    char rightValue = grid[currentrow][currentcol + 1];
-    char upperValue = grid[currentrow - 1][currentcol];
-    char lowerValue = grid[currentrow + 1][currentcol];
 
-    if (leftValue == '.' || rightValue == '.' || upperValue == '.' || lowerValue == '.')
+bool validmoveexists(int numrows, int numcols, char grid[numrows][numcols], int row, int col)
+{
+    // Conditions to check whether adjacent position is available.
+
+    if (row > 0 && grid[row - 1][col] == '.') // Upper position
     {
         return true;
     }
-
+    else if (row < numrows - 1 && grid[row + 1][col] == '.') // Below Position
+    {
+        return true;
+    }
+    else if (col > 0 && grid[row][col - 1] == '.') // Left Position
+    {
+        return true;
+    }
+    else if (col < numcols - 1 && grid[row][col + 1] == '.') // Right Position
+    {
+        return true;
+    }
     return false;
 }
 
 int main()
 {
-    int numrows = 10;
-    int numcols = 10;
-    char field[10][10];
-
-    for (int i = 0; i < numrows; i++)
-    {
-        for (int j = 0; j < numcols; j++)
-        {
-            field[i][j] = '.';
-        }
-    }
+    char grid[SIZE][SIZE]; // initialising 2d array
+    int row;
+    int col;
+    char letter = 'A';
 
     srand(time(NULL));
 
-    int currentRow = rand() % numrows;
-    int currentCol = rand() % numcols;
-
-    char position = 'A';
-    bool validMove = validmoveexists(numrows, numcols, field, currentRow, currentCol);
-
-    do
+    // Initialize grid with initial character: '.'
+    for (int i = 0; i < SIZE; i++)
     {
-        field[currentRow][currentCol] = position;
-        position++;
-        printgrid(numrows, numcols, field);
-        // printf("%c", position);
-
-        while (field[currentRow][currentCol] == '.')
+        for (int j = 0; j < SIZE; j++)
         {
-            int direction = rand() % 4;
+            grid[i][j] = '.';
+        }
+    }
 
-            if (direction == 0)
+    // Choosing a starting position
+    row = rand() % SIZE;
+    col = rand() % SIZE;
+    grid[row][col] = letter++;
+
+    // While loop that runs until we reach 'Z' or no valid move exists.
+
+    while (letter <= 'Z' && validmoveexists(SIZE, SIZE, grid, row, col))
+    {
+        int new_row = row;
+        int new_col = col;
+        bool moved = false;
+
+        // While loop to run everytime moved = false.
+        while (!moved)
+        {
+            int direction = rand() % 4; // 0: upwards, 1: downwards, 2: left, 3: right
+
+            // Conditions to check that we are inside the grid and the adjacent spaces are '.'
+
+            if (direction == 0 && row > 0 && grid[row - 1][col] == '.') // Moving Upwards
             {
+                new_row = row - 1;
             }
-            else if (direction == 1)
+            else if (direction == 1 && row < SIZE - 1 && grid[row + 1][col] == '.') // Moving Downwards
+            {
+                new_row = row + 1;
+            }
+            else if (direction == 2 && col > 0 && grid[row][col - 1] == '.') // Moving Left
+            {
+                new_col = col - 1;
+            }
+            else if (direction == 3 && col < SIZE - 1 && grid[row][col + 1] == '.') // Moving Right
+            {
+                new_col = col + 1;
+            }
+
+            if (new_row != row || new_col != col)
+            {
+                grid[new_row][new_col] = letter++;
+                row = new_row;
+                col = new_col;
+                moved = true;
+            }
         }
 
-    } while (validMove && position >= 'Z');
+        printgrid(SIZE, SIZE, grid); // printing the current grid.
+        printf("\n");
+    }
 
     return 0;
 }

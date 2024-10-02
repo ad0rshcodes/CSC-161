@@ -1,0 +1,31 @@
+Lab Report Week 4
+
+Group: Finn, Adarsh
+
+Acknowledgement: Our course mentor Chloe assisted us in Wednesday's lab to
+better understand binary representations.
+
+Monday A.1-2, B.1, B.3
+
+See quadratic.c and the bottom of reduce.c.
+
+Wednesday A.4, A.5, B.1-3
+
+For A: See integer-rep.c
+
+B1: The maximum integer would be 2^14 + 2^13 + 2^12 + ... 2^1 + 2^0.
+
+B2: The maximum integer would be 2^30 + 2^29 + 2^28 + ..... 2^1 + 2^0.
+
+B3: Essentially, these companies didn't account for overflow. They only had
+a certain amount of memory allocated for views/charges for a specific
+thing. Issues arose when memory past these integer limits were attempted to
+be "accessed".
+
+Friday A.3, A.4, B.3
+
+See data-rep.c.
+
+See float-loop.c. 
+
+

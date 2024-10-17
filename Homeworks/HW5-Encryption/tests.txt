@@ -1,0 +1,186 @@
+Caesar Cipher: Testing Plan
+
+Tests:
+
+1. Short input string 
+This test checks to see if the program correctly handles a short input of only lowercase letters. 
+Inputs:
+'e'
+abc
+Expected Output:
+n=0: abc
+n=1: bcd
+n=2: cde
+n=3: def
+n=4: efg
+n=5: fgh
+n=6: ghi
+n=7: hij
+n=8: ijk
+n=9: jkl
+n=10: klm
+n=11: lmn
+n=12: mno
+n=13: nop
+n=14: opq
+n=15: pqr
+n=16: qrs
+n=17: rst
+n=18: stu
+n=19: tuv
+n=20: uvw
+n=21: vwx
+n=22: wxy
+n=23: xyz
+n=24: yza
+n=25: zab
+
+2. Invalid operation input 
+This test checks to see if the program rejects invalid operation inputs. Input:
+'x'
+Expected Output:
+Invalid input. Please enter 'e' for encoding or 'd' for decoding.
+
+
+3. Input containing non-lowercase letters 
+This test checks if the program catches invalid characters (uppercase letters). 
+Input:
+'e'
+aBcDe
+Expected Output:
+Invalid input! Please enter lowercase letters only.
+
+
+4. Long input string 
+This test checks how the program handles a longer input string and shifts it for all possible rotations. 
+Input:
+'d'
+abcdefghijklmnopqrstuvwxyz
+Expected Output:
+n=0: abcdefghijklmnopqrstuvwxyz
+n=1: zabcdefghijklmnopqrstuvwxy
+n=2: yzabcdefghijklmnopqrstuvwx
+n=3: xyzabcdefghijklmnopqrstuvw
+n=4: wxyzabcdefghijklmnopqrstuv
+n=5: vwxyzabcdefghijklmnopqrstu
+n=6: uvwxyzabcdefghijklmnopqrst
+n=7: tuvwxyzabcdefghijklmnopqrs
+n=8: stuvwxyzabcdefghijklmnopqr
+n=9: rstuvwxyzabcdefghijklmnopq
+n=10: qrstuvwxyzabcdefghijklmnop
+n=11: pqrstuvwxyzabcdefghijklmno
+n=12: opqrstuvwxyzabcdefghijklmn
+n=13: nopqrstuvwxyzabcdefghijklm
+n=14: mnopqrstuvwxyzabcdefghijkl
+n=15: lmnopqrstuvwxyzabcdefghijk
+n=16: klmnopqrstuvwxyzabcdefghij
+n=17: jklmnopqrstuvwxyzabcdefghi
+n=18: ijklmnopqrstuvwxyzabcdefgh
+n=19: hijklmnopqrstuvwxyzabcdefg
+n=20: ghijklmnopqrstuvwxyzabcdef
+n=21: fghijklmnopqrstuvwxyzabcde
+n=22: efghijklmnopqrstuvwxyzabcd
+n=23: defghijklmnopqrstuvwxyzabc
+n=24: cdefghijklmnopqrstuvwxyzab
+n=25: bcdefghijklmnopqrstuvwxyza
+
+
+5. Single-character input
+This test checks the program's behavior with the smallest possible input. Input:
+'e'
+a
+Expected Output:
+n=0: a
+n=1: b
+n=2: c
+n=3: d
+n=4: e
+n=5: f
+n=6: g
+n=7: h
+n=8: i
+n=9: j
+n=10: k
+n=11: l
+n=12: m
+n=13: n
+n=14: o
+n=15: p
+n=16: q
+n=17: r
+n=18: s
+n=19: t
+n=20: u
+n=21: v
+n=22: w
+n=23: x
+n=24: y
+n=25: z
+
+
+6. Empty input string This test checks if the program handles empty input without errors. 
+Input:
+'e'
+(nothing for the string)
+Expected Output:
+n=0: 
+n=1: 
+n=2: 
+n=3: 
+n=4: 
+n=5: 
+n=6: 
+n=7: 
+n=8: 
+n=9: 
+n=10: 
+n=11: 
+n=12: 
+n=13: 
+n=14: 
+n=15: 
+n=16: 
+n=17: 
+n=18: 
+n=19: 
+n=20: 
+n=21: 
+n=22: 
+n=23: 
+n=24: 
+n=25: 
+
+7. Input longer than 100 characters
+This test checks if the program correctly truncates inputs longer than 100 characters. 
+Input:
+e
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcde
+
+Expected Output:
+n=0: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv
+n=1: bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw
+n=2: cdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx
+n=3: defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy
+n=4: efghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+n=5: fghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza
+n=6: ghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzab
+n=7: hijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc
+n=8: ijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd
+n=9: jklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcde
+n=10: klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef
+n=11: lmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefg
+n=12: mnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefgh
+n=13: nopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi
+n=14: opqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij
+n=15: pqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk
+n=16: qrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijkl
+n=17: rstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklm
+n=18: stuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn
+n=19: tuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmno
+n=20: uvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnop
+n=21: vwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopq
+n=22: wxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqr
+n=23: xyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs
+n=24: yzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst
+n=25: zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu
+

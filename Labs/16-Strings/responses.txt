@@ -1,0 +1,13 @@
+Lab Report Week 7
+Group: Lochi & Adarsh
+
+Monday
+A1. Done
+
+A2. Each string will stop at index 3, except for "Hello"
+
+Wednesday
+<Write responses to Wednesday's lab exercises here>
+
+Friday
+<Write responses to Friday's lab exercises here>

@@ -1,2 +1,19 @@
-.DS_Store
 C-Programming-King.pdf
+
+# Ignore executables
+*.out
+*.exe
+*.dSYM
+*.o
+*.so
+*.a
+
+# Ignore macOS-specific files
+.DS_Store
+
+
+**/*
+!**/*.c
+!**/*.h
+!**/*.txt
+!**/*.md

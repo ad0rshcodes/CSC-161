@@ -1,7 +1,7 @@
 C-Programming-King.pdf
 
 # Ignore executables
-**/*
+
 !**/*.c
 !**/*.h
 !**/*.txt

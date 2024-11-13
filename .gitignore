@@ -1,14 +1,2 @@
-C-Programming-King.pdf
-
-# Ignore executables
-
-!**/*.c
-!**/*.h
-!**/*.txt
-!**/*.md
-!**/Makefile
-
 # Ignore macOS-specific files
 .DS_Store
-
-

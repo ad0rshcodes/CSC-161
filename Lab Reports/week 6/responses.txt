@@ -1,0 +1,38 @@
+Lab Report Week 6
+Group: Fui, Adarsh, (Fui worked with Mia for wednesday) (Fui worked with ET for friday)
+Acknowledgement: <acknowledge any assistance/resources here>
+
+Monday/ Wednesday
+B1. See max.c
+B2. See divide.c
+B3. See time.c
+B4. See exchange.c
+
+C1.
+
+   The addresses of side1 are equal for both perimeter and area. Same with
+   side2. They are also the same as length (side1) and width (side2)
+
+
+C2.   length and width will be adjacent
+   perimeter and area will be adjacent
+
+C3.    we were right about the shared location of side1 in perimiter and side 1
+   in area, as well as side2. We were not right about length and width being
+   the same as side1/side2
+
+   we were right about adjacent addresses as well
+
+D2. Prediction: Perimeter and length are the same. Width and area are the same. 
+
+Result: non of them are the same or adjacent
+
+
+
+Friday
+A.1 See max-array.c
+A.2 See max-array.c
+A.3 See max-array.c
+A.4 find_max is more readable
+A.5 See max-array.c
+A.6 See max-array.c

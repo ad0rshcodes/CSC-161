@@ -14,11 +14,6 @@ B.)
 
 4. The header is already defined in the c file.
 
-E.)
-
-1. When we have a full definition in a header file, each source file that includes the header will essentially copy the full definition into their .c files. therefore, both chicken.c and cow.c include util.h and make_sound is defined twice. 
-
-
 Wednesday
 
 Friday

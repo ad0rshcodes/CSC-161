@@ -1,0 +1,35 @@
+Lab Report Week 8
+Group: Lochi & Adarsh
+
+Monday
+B.
+1 & 2.
+  char *baboon; // Valid because it's a pointer declaration
+  char *chimpanzee = "animal"; // Valid because it's a string literal
+  char dolphin[]; // Invalid because it does not specify size of the array
+  char emu[] = "animal";  // Valid character array initialization -
+  automatically gets size
+  char giraffe[8] = "animal"; // Valid character array initialization -
+  fixed size
+  char fox[4] = "animal"; // Valid, but may cause error due to shorter size
+  char elephant[10]; // Valid character array declaration - fixed sie
+  elephant = "animal"; // Invalid because its not assignable
+
+3. Giraffe would spill over into fox. It will take extra
+characters that haven't been assigned because "animal" is greater than 4
+characters, meaning it will end i 'm' instead of \0.
+Since it doesn't have a \0, fox keeps reading characters and moves into the
+neighboring array memory (giraffe).
+
+D. Done
+
+Wednesday
+A1. We predicted it would print all the arguments.
+A2. Atoi is used to convert a ASCII string (that is intended to be an integer) to an integer.
+    strtod is used to convert a ASCII string to a float.
+
+A3. Done
+
+Friday
+
+B2. Done

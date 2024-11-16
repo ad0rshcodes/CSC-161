@@ -1,0 +1,17 @@
+Monday
+A1. 
+It’s declared before the main function. That’s because the struct is called in printStudent and main function.
+The field is inside main function
+Because you cannot direct use = to assign a string.
+It used “%7.1lf” to make sure each cell will have the same length
+“-” means add space before the string
+A2. See test-scores-1.c
+A3. It will effect the average score but won’t effect the original test1 score.
+
+Wednesday
+B1. It should be 4(size of int)
+B2. It should be a, whose ascii value is 97
+B3. A number in the range of short
+B4. Prediction: no idea. Check: 6513249
+
+C: See union.c

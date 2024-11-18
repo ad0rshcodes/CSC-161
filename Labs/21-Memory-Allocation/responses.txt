@@ -1,0 +1,28 @@
+A.
+        2. 'p' is a pointer to a NULL pointer. 'q' is pointing to x whose
+        value is 200.
+        3. 
+           int* p;
+           int* q = (int*)malloc(sizeof(int));
+           int* temp = q;
+           if (q == NULL) {
+              perror("Failed to allocate memory");
+              exit(EXIT_FAILURE);
+           }
+
+           int x = 5;
+           p = &x;
+           *q = 100;
+           *p = 200;
+           p = (int*)malloc(sizeof(int));
+           if (p == NULL) {
+              perror("Failed to allocate memory");
+              exit(EXIT_FAILURE);
+              }
+
+           q = &x;
+
+
+C.         
+           1.It is important to free allocated memory because it makes the
+           program more efficient and saves space in the heap. A program that exceeds the heap memory.

@@ -1,0 +1,42 @@
+Word Search: Testing Plan
+
+Tests:
+
+1. Basic Functionality Tests
+
+- Single horizontal word in first row
+- Single vertical word in first column
+- Word at the end of row/column
+- Single letter word
+- Maximum length word (spanning entire row/column)
+
+
+2. Edge Cases
+
+- Grid of minimum size (1x1)
+- Grid of different dimensions (rectangular - e.g., 5x10)
+- Empty grid (0x0)
+- No words in word list
+- Single word in word list
+
+3. Word Placement Tests
+
+- Words that share letters (intersecting words)
+- Multiple words in same row/column
+- Words that overlap but don't match
+- Words placed consecutively
+
+4. Word List Variations
+
+- Similar words (e.g., "THE" and "THEN")
+
+5. Error Cases to Test
+
+- Missing command line argument
+- File not found
+- Invalid grid dimensions
+- Malformed grid (missing characters)
+- Invalid characters in grid
+- Words longer than grid dimensions
+- Words that don't exist in grid
+

@@ -1,0 +1,38 @@
+Monday 
+
+A.
+        2. 'p' is a pointer to a NULL pointer. 'q' is pointing to x whose
+        value is 200.
+        3. 
+           int* p;
+           int* q = (int*)malloc(sizeof(int));
+           int* temp = q;
+           if (q == NULL) {
+              perror("Failed to allocate memory");
+              exit(EXIT_FAILURE);
+           }
+
+           int x = 5;
+           p = &x;
+           *q = 100;
+           *p = 200;
+           p = (int*)malloc(sizeof(int));
+           if (p == NULL) {
+              perror("Failed to allocate memory");
+              exit(EXIT_FAILURE);
+              }
+
+           q = &x;
+
+
+B. Look at the corresponding C files. 
+
+D. Look at the corresponding C files. 
+
+
+Wednesday
+
+A. 
+    1. int sum_values(const int* arr, size_t length);
+    2. int integer_divide(int dividend, int divisor, int* quotient, int* remainder);
+    3. bool arrays_equal(const char* arr1, const char* arr2, size_t length);

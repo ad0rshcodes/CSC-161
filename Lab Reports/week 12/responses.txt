@@ -1,0 +1,21 @@
+
+
+
+
+Wednesday's Lab:
+
+B3) 
+    string_list_insert:
+
+        When a string is inserted, the list’s length should be incremented by 1.
+        After inserting a new node, increase lst->length.
+
+    string_list_remove:
+
+        When a string is removed, the list’s length should be decremented by 1.
+        After removing a node, decrease lst->length.
+
+    string_list_destroy:
+
+        The list's length should be set to 0 when the list is destroyed.
+        Set lst->length to 0 after freeing the nodes.

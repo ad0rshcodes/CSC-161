@@ -1,5 +1,18 @@
+Monday's Lab:
 
+D3) 
+    We added "printf("test"); string_list_print(lst);" at the end of the destroy function and we can see the string "test" being printed but nothing gets printed from string_list_print function. Therefore, we can conclude there's nothing left to print in the lst. 
 
+E2)
+    ./list-practice-asan
+    Enter a command. Type "help" to see available options.
+    > insert adarsh 
+    > insert anshul
+    > append csc161
+    > print
+    anshul 
+    adarsh 
+    csc161 
 
 
 Wednesday's Lab:

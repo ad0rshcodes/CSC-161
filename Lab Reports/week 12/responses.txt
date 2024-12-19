@@ -1,3 +1,7 @@
+Lab Report Week 12
+Adarsh and Anshul
+Acknowledgement: Reading for linked list variations
+
 Monday's Lab:
 
 D3) 
@@ -14,9 +18,10 @@ E2)
     adarsh 
     csc161 
 
+File to submit is string_list.c
 
 Wednesday's Lab:
-
+File submitted with parts A and B is string_list_wednesday.c
 B3) 
     string_list_insert:
 

@@ -45,45 +45,29 @@ void string_list_destroy(string_list_t *lst)
  * \param str A heap-allocated string that should be inserted into the list. This function takes
  *            ownership of str, and will free the underlying memory in string_list_destroy.
  */
-void string_list_insert(string_list_t *lst, char *str)
-{
-  string_node_t *newNode = malloc(sizeof(string_node_t));
+// void string_list_insert(string_list_t *lst, char *str)
+// {
+//   string_node_t *cursor = lst->head;
+//   string_node_t *newNode = malloc(sizeof(string_node_t));
+//   newNode->value = malloc(sizeof(str));
+//   strcpy(newNode->value, str);
 
-  if (newNode == NULL)
-  {
-    exit(EXIT_FAILURE);
-  }
-
-  newNode->value = malloc(sizeof(str));
-  strcpy(newNode->value, str);
-
-  newNode->next = lst->head;
-  lst->head = newNode;
-}
-
-/**
- * Add a string to the end of a string list.
- *
- * \param lst A pointer to an initialized string list. The new value is added to the back of this
- *            list. This function does NOT take ownership of lst.
- * \param str A heap-allocated string that should be appended to the list. This function takes
- *            ownership of str, and will free the underlying memory in string_list_destroy.
- */
-void string_list_append(string_list_t *lst, char *str)
-{
-  string_node_t *cursor = lst->head;
-  string_node_t *newNode = malloc(sizeof(string_node_t));
-  newNode->value = malloc(sizeof(str));
-  strcpy(newNode->value, str);
-
-  while (cursor->next != NULL)
-  {
-    cursor = cursor->next;
-  }
-
-  cursor->next = newNode;
-  newNode->next = NULL;
-}
+//   if (lst->head == NULL)
+//   {
+//     lst->head = newNode;
+//     newNode->next = NULL;
+//   }
+//   else
+//   {
+//     while (cursor->next != NULL)
+//     {
+//       if (strcmp(cursor->value, str) > 0)
+//       {
+//         newNode->next = cursor
+//       }
+//     }
+//   }
+// }
 
 /**
  * Count the number of times a value appears in the given list.

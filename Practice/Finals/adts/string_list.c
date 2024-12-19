@@ -12,8 +12,9 @@
  */
 void string_list_init(string_list_t *lst)
 {
-  // The list has no nodes, so head points to NULL
-  lst->head = NULL;
+  lst->length = 0;
+  lst->capacity = 10;
+  lst->arr = malloc(lst->capacity * sizeof(char *));
 }
 
 /**
@@ -23,18 +24,11 @@ void string_list_init(string_list_t *lst)
  */
 void string_list_destroy(string_list_t *lst)
 {
-  string_node_t *cursor = lst->head;
-  string_node_t *temp;
-
-  while (cursor != NULL)
+  for (int i = 0; i < lst->length; i++)
   {
-    temp = cursor;
-    free(cursor->value);
-    cursor = cursor->next;
-    free(temp);
+    free(lst->arr[i]);
   }
-
-  free(cursor);
+  free(lst->arr);
 }
 
 /**
@@ -47,18 +41,6 @@ void string_list_destroy(string_list_t *lst)
  */
 void string_list_insert(string_list_t *lst, char *str)
 {
-  string_node_t *newNode = malloc(sizeof(string_node_t));
-
-  if (newNode == NULL)
-  {
-    exit(EXIT_FAILURE);
-  }
-
-  newNode->value = malloc(sizeof(str));
-  strcpy(newNode->value, str);
-
-  newNode->next = lst->head;
-  lst->head = newNode;
 }
 
 /**
@@ -71,18 +53,14 @@ void string_list_insert(string_list_t *lst, char *str)
  */
 void string_list_append(string_list_t *lst, char *str)
 {
-  string_node_t *cursor = lst->head;
-  string_node_t *newNode = malloc(sizeof(string_node_t));
-  newNode->value = malloc(sizeof(str));
-  strcpy(newNode->value, str);
-
-  while (cursor->next != NULL)
+  if (lst->length == lst->capacity)
   {
-    cursor = cursor->next;
+    lst->arr = realloc(lst->arr, sizeof(char *) * 2 * lst->capacity);
+    lst->capacity = 2 * lst->capacity;
   }
 
-  cursor->next = newNode;
-  newNode->next = NULL;
+  lst->arr[lst->length] = str;
+  lst->length++;
 }
 
 /**
@@ -95,15 +73,12 @@ void string_list_append(string_list_t *lst, char *str)
 size_t string_list_count(const string_list_t *lst, const char *str)
 {
   size_t count = 0;
-  string_node_t *cursor = lst->head;
-
-  while (cursor != NULL)
+  for (int i = 0; i < lst->length; i++)
   {
-    if (strcmp(cursor->value, str) == 0)
+    if (strcmp(str, lst->arr[i]) == 0)
     {
       count++;
     }
-    cursor = cursor->next;
   }
 
   return count;
@@ -119,31 +94,8 @@ size_t string_list_count(const string_list_t *lst, const char *str)
  */
 bool string_list_remove(string_list_t *lst, const char *str)
 {
-  string_node_t *cursor = lst->head;
-  string_node_t *temp;
-
-  if (strcmp(cursor->value, str) == 0)
-  {
-    lst->head = cursor->next;
-    free(cursor->value);
-    free(cursor);
-    return true;
-  }
-
-  while (cursor->next != NULL)
-  {
-    if (strcmp(cursor->next->value, str) == 0)
-    {
-      temp = cursor->next;
-      cursor->next = cursor->next->next;
-      free(temp->value);
-      free(temp);
-      return true;
-    }
-
-    cursor = cursor->next;
-  }
-
+  // TODO: implement me
+  printf("NOT IMPLEMENTED\n");
   return false;
 }
 
@@ -155,15 +107,7 @@ bool string_list_remove(string_list_t *lst, const char *str)
  */
 size_t string_list_length(const string_list_t *lst)
 {
-  string_node_t *cursor = lst->head;
-  int count = 0;
-  while (cursor != NULL)
-  {
-    count++;
-    cursor = cursor->next;
-  }
-
-  return count;
+  return lst->length;
 }
 
 /**
@@ -173,11 +117,8 @@ size_t string_list_length(const string_list_t *lst)
  */
 void string_list_print(const string_list_t *lst)
 {
-  string_node_t *cursor = lst->head;
-
-  while (cursor != NULL)
+  for (int i = 0; i < lst->length; i++)
   {
-    printf("%s, ", cursor->value);
-    cursor = cursor->next;
+    printf("%s, ", lst->arr[i]);
   }
 }
